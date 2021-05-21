@@ -1,0 +1,80 @@
+#app {
+    padding: 25px;
+    background-color: $choco;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    h1 {
+        text-align: center;
+        color: $glaze;
+        font-size: 30px;
+    }
+    .calc {
+        margin-top: 15px;
+        padding: 5px;
+        border-radius: 10px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        background: $toffee;
+        .inputs {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            input {
+                flex: 1 1;
+                font-size: 25px;
+                padding: 5px;
+                text-align: right;
+                background-color: $glaze;
+                color: $choco;
+                &:first-child {
+                    border-radius: 5px 5px 0 0;
+                }
+                &:not(:first-child) {
+                    margin-top: 2px;
+                }
+            }
+        }
+        .answer {
+            padding-right: 15px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $glaze;
+            border-radius: 5px 5px 0 0;
+            span {
+                font-size: 25px;
+                color: $choco;
+            }
+            button {
+                height: 50px;
+                width: 50px;
+                border-radius: 25px;
+            }
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            button {
+                height: 50px;
+                flex: 1 1 50px;
+                font-size: 20px;
+                margin-top: 2px;
+                &:not(:nth-child(3n)) {
+                    margin-right: 2px;
+                }
+                &:nth-child(4) {
+                    border-radius: 0 0 0 5px;
+                }
+                &:nth-child(6) {
+                    border-radius: 0 0 5px 0;
+                }
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

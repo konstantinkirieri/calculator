@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robota, sans-serif;
+}
+
+body {
+    background-color: $choco;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    &:focus {
+        outline: none;
+    } 
+}
+
+
+button {
+    color: $choco;
+    border: none;
+    background-color: $glaze;
+    &:hover {
+        color: $toffee;
+    }
+}
