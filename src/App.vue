@@ -50,7 +50,12 @@ export default {
       this.end = true;
     },
     division() {
-      this.result = +this.firstValue / +this.secondValue;
+      if(this.secondValue != false) {
+        this.result = +this.firstValue / +this.secondValue;
+      } else {
+        this.result = 'На 0 делить нельзя'
+      }
+      
       this.end = true;
     },
     exp() {
@@ -58,9 +63,14 @@ export default {
       this.end = true;
     },
     divisionWithoutRem() {
-      this.result = Math.floor(+this.firstValue / +this.secondValue);
+      if(this.secondValue != false) {
+        this.result = Math.floor(+this.firstValue / +this.secondValue);
+      } else {
+        this.result = 'На 0 делить нельзя'
+      }
+      
       this.end = true;
-    }
+    },
   },
 }
 </script>
