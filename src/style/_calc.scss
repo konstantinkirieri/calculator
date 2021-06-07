@@ -57,6 +57,22 @@
         .actions {
             display: flex;
             flex-wrap: wrap;
+            position: relative;
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+            .keyboard {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1 1 50px;
+                margin-top: 2px;
+                min-height: 20px;
+                border-radius: 0 0 5px 5px;
+            }
             button {
                 height: 50px;
                 flex: 1 1 50px;
@@ -64,12 +80,6 @@
                 margin-top: 2px;
                 &:not(:nth-child(3n)) {
                     margin-right: 2px;
-                }
-                &:nth-child(4) {
-                    border-radius: 0 0 0 5px;
-                }
-                &:nth-child(6) {
-                    border-radius: 0 0 5px 0;
                 }
                 span {
                     font-size: 15px;
